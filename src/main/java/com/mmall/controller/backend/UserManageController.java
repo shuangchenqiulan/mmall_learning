@@ -22,9 +22,6 @@ public class UserManageController {
     @Autowired
     private IUserService iUserService;//这里肯定是指向子类的IUserServiceImpl
 
-    @Autowired
-    private ICategoryService iCategoryService;
-
     @RequestMapping(value="login.do",method = RequestMethod.POST)
     @ResponseBody
     public ServerResponse<User> login(String username, String password, HttpSession session) {

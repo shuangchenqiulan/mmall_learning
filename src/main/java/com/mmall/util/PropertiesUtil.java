@@ -17,6 +17,10 @@ public class PropertiesUtil {
 
     private static Properties props;
 
+    /*
+    一个类可以使用不包含在任何方法体中的静态代码块，当类被载入时，
+    静态代码块被执行，且只被执行一次，静态块常用来执行类属性的初始化
+     */
     static {
         String fileName = "mmall.properties";
         props = new Properties();
